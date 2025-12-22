@@ -1,0 +1,28 @@
+[
+  {
+    "role": "Frontend Development Certification",
+    "organisation": "OneRoadMap",
+    "imageSrc": "assets/certificates/Frontend Development-Certificate.pdf"
+  },
+  {
+    "role": "DataScience",
+    "organisation": "GeeksForGeeks",
+    "imageSrc": "assets/certificates/DataScience Audit Course.pdf"
+  },
+  {
+    "role": "SQL (Basic + Intermediate )",
+    "organisation": "HackerRank ",
+    "imageSrc": "assets/certificates/sql_intermediate certificate.pdf"
+  },
+  {
+    "role": "Java Programming Certification",
+    "organisation": "HackerRank",
+    "imageSrc": "assets/certificates/java_basic certificate.pdf"
+  },
+  {
+    
+    "role": "Email Marketing",
+    "organisation": "HubSpot",
+    "imageSrc": "assets/certificates/Email_Marketing.png"
+  }
+]

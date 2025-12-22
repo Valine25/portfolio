@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarna:wght@300;400;500;600&display=swap');
+
+.container {
+  color: #FCDE9C;
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.edu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.eduItem {
+  background: linear-gradient(90deg, #381D2A 0%, #70314f 100%);
+  border-radius: 12px;
+  padding: 26px 30px;
+}
+
+.eduItemDetails {
+  font-family: "Amarna", sans-serif;
+}
+
+/* Course */
+.course {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* College */
+.college {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.95;
+  margin-bottom: 12px;
+}
+
+/* Year + CGPA */
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* ============================= */
+/* 🔽 RESPONSIVE MEDIA QUERY */
+/* ============================= */
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .eduItem {
+    padding: 20px 22px;
+  }
+
+  .course {
+    font-size: 22px;
+  }
+
+  .college {
+    font-size: 18px;
+  }
+
+  .meta {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 16px;
+  }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+  .container {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .course {
+    font-size: 20px;
+  }
+
+  .college {
+    font-size: 16px;
+  }
+
+  .meta {
+    font-size: 14px;
+  }
+}
+
+/* @media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .skills {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .history {
+    width: 100%;
+    gap: 9px;
+  }
+} */
+
+
