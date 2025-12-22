@@ -1,21 +1,21 @@
 [
   {
     "title": "Food Delivery App",
-    "imageSrc": "projects/food_del.png",
+    "imageSrc": "/assets/projects/food_del.png",
     "description": "Created a food delivery web app using React, focusing on component-based UI and smooth user experience.",
     "skills": ["HTML","CSS","Javascript","React"],
     "source": "https://github.com/Valine25/food-delivery-app"
   },
   {
     "title": "Restaurant Booking Application",
-    "imageSrc": "projects/resto.png",
+    "imageSrc": "/assets/projects/resto.png",
     "description": "Designed and implemented a full-stack restaurant booking system with user-friendly frontend and database-driven booking management.",
     "skills": ["React", "Express", "Node", "MongoDB"],
     "source": "https://www.github.com/Valine25/resto-app"
   },
   {
     "title": "Evoting System for College Elections",
-    "imageSrc": "projects/evoting.png",
+    "imageSrc": "/assets/projects/evoting.png",
     "description": "Built an eVoting system for college elections with role-based access for voters and administrators.",
     "skills": ["HTML", "CSS", "Javascript","Servlets","MySql"],
     "source": "https://github.com/Valine25/evoting_system_project"
