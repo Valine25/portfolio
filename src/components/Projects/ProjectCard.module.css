@@ -34,11 +34,12 @@
   width: 100%;
   margin-top: 14px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 10px;              /* increase gap */
+  justify-content: center; /* center on mobile */
   list-style: none;
 }
+
 
 .skill {
   font-size: 18px;
@@ -50,10 +51,11 @@
 
 .links {
   width: 100%;
-  margin-top: auto;        /* 🔑 MAGIC LINE */
+  margin-top: 18px;
   display: flex;
   justify-content: center;
 }
+
 
 
 .link {
@@ -64,4 +66,18 @@
   border-radius: 100px;
   background: #381D2A;
   padding: 1px 22px;
+}
+@media screen and (max-width: 480px) {
+  .skill {
+    font-size: 14px;
+    padding: 4px 14px;
+    line-height: 1.2;
+  }
+ 
+  .link {
+    font-size: 18px;
+    padding: 4px 18px;
+  }
+
+
 }

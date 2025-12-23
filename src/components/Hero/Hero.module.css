@@ -59,7 +59,7 @@
 
 .heroImg {
   width: 350px;
-  height: 200x;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
   z-index: 1;
@@ -121,9 +121,22 @@
   .content {
     align-items: center;
   }
+  .buttons {
+    margin-bottom: 20px;
+  }
+
+  .contactBtn {
+    padding: 14px 22px;
+    font-size: 16px;
+    margin-right: 0; /* remove right margin */
+  }
 }
-.buttons{
-  display:flex;
-  
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;   /* ✅ IMPORTANT */
+  justify-content: center;
 }
+
 
