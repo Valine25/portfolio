@@ -10,6 +10,15 @@ export const Contact = () => {
       </div>
 
       <ul className={styles.links}>
+         <li className={styles.link}>
+          <img
+            src="/assets/contact/phone.png"
+            alt="Phone icon"
+          />
+          <a href="tel:+919686177635">
+            +91 9686177635
+          </a>
+        </li>
         <li className={styles.link}>
           <img
             src="/assets/contact/emailIcon.png"
