@@ -4,59 +4,65 @@ import styles from "./Contact.module.css";
 export const Contact = () => {
   return (
     <footer id="contact" className={styles.container}>
-      <div className={styles.text}>
-        <h2>Contact</h2>
-        <p>Feel free to reach out!</p>
+      <div>
+        <div className={styles.text}>
+          <h2>Contact</h2>
+          <p>Feel free to reach out!</p>
+        </div>
+
+        <ul className={styles.links}>
+          <li className={styles.link}>
+            <img
+              src="/assets/contact/phone.png"
+              alt="Phone icon"
+            />
+            <a href="tel:+919686177635">
+              +91 9686177635
+            </a>
+          </li>
+          <li className={styles.link}>
+            <img
+              src="/assets/contact/emailIcon.png"
+              alt="Email icon"
+            />
+            <a href="mailto:valinenoronha25@gmail.com">
+              valinenoronha25@gmail.com
+            </a>
+          </li>
+
+          <li className={styles.link}>
+            <img
+              src="/assets/contact/linkedinIcon.png"
+              alt="LinkedIn icon"
+            />
+            <a
+              href="https://www.linkedin.com/in/valine-sonal-noronha"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/valine-sonal-noronha
+            </a>
+          </li>
+
+          <li className={styles.link}>
+            <img
+              src="/assets/contact/githubIcon.png"
+              alt="GitHub icon"
+            />
+            <a
+              href="https://github.com/Valine25"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/Valine25
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <ul className={styles.links}>
-         <li className={styles.link}>
-          <img
-            src="/assets/contact/phone.png"
-            alt="Phone icon"
-          />
-          <a href="tel:+919686177635">
-            +91 9686177635
-          </a>
-        </li>
-        <li className={styles.link}>
-          <img
-            src="/assets/contact/emailIcon.png"
-            alt="Email icon"
-          />
-          <a href="mailto:valinenoronha25@gmail.com">
-            valinenoronha25@gmail.com
-          </a>
-        </li>
-
-        <li className={styles.link}>
-          <img
-            src="/assets/contact/linkedinIcon.png"
-            alt="LinkedIn icon"
-          />
-          <a
-            href="https://www.linkedin.com/in/valine-sonal-noronha"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            linkedin.com/valine-sonal-noronha
-          </a>
-        </li>
-
-        <li className={styles.link}>
-          <img
-            src="/assets/contact/githubIcon.png"
-            alt="GitHub icon"
-          />
-          <a
-            href="https://github.com/Valine25"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            github.com/Valine25
-          </a>
-        </li>
-      </ul>
+      <br />
+      <div className={styles.copyright}>
+        <p>&copy; {new Date().getFullYear()} Valine Sonal Noronha. All rights reserved.</p>
+      </div>
     </footer>
   );
 };

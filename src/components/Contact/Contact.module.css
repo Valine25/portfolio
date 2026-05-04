@@ -3,10 +3,16 @@
   margin-top: 120px;
   background-color: #381D2A;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
   width: 100%; /* FIXED */
   padding: 58px 10%;
+  gap: 10px;
+}
+
+.container > div:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   gap: 10px;
 }
 
@@ -92,6 +98,11 @@
   }
 }
 
+
+.copyright {
+  text-align: center;
+  width: 100%;
+}
 
 @media screen and (max-width: 480px) {
   .text h2 {
