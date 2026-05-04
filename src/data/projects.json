@@ -1,5 +1,19 @@
 [
   {
+    "title": "AI-Based Smart Distance & Blind Assistance System",
+    "imageSrc": "/assets/projects/distance.png",
+    "description": "An AI-powered system designed to assist both general users and visually impaired individuals by providing real-time distance awareness using a single webcam.",
+    "skills": ["Python","OpenCV","Streamlit","Haar Cascade Classifier"],
+    "source": "https://github.com/Valine25/voice-distance-app"
+  },
+  {
+    "title": "Medical Device Monitoring and Simulation Platform",
+    "imageSrc": "/assets/projects/Medical_Device.png",
+    "description": "A full-stack system that simulates medical device vitals and displays them on a real-time monitoring dashboard.The platform mimics how hospital monitoring systems track patient vitals and trigger alerts when abnormal conditions are detected.",
+    "skills": ["React","Chart.js","CSS","Node.js","Python","FastAPI"],
+    "source": "https://github.com/Valine25/medical-device-simulator"
+  },
+  {
     "title": "Food Delivery App",
     "imageSrc": "/assets/projects/food_del.png",
     "description": "Created a food delivery web app using React, focusing on component-based UI and smooth user experience.",

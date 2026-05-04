@@ -9,6 +9,16 @@ export const About = () => {
       <div className={styles.content}>
         
         <ul className={styles.aboutItems}>
+                    <li className={styles.aboutItem}>
+            <img src="/assets/about/cursorIcon.png" alt="UI icon" />
+            <div className={styles.aboutItemText}>
+              <h3>Full-Stack Developer</h3>
+              <p>
+                Building end-to-end web applications by integrating frontend, backend, and database systems to deliver complete and scalable solutions
+
+              </p>
+            </div>
+          </li>
           <li className={styles.aboutItem}>
             <img src="/assets/about/cursorIcon.png" alt="Cursor icon" />
             <div className={styles.aboutItemText}>
@@ -29,15 +39,7 @@ export const About = () => {
               </p>
             </div>
           </li>
-          <li className={styles.aboutItem}>
-            <img src="/assets/about/cursorIcon.png" alt="UI icon" />
-            <div className={styles.aboutItemText}>
-              <h3>SQL Developer</h3>
-              <p>
-                Hands-on experience writing SQL queries, designing tables, and managing relational data for application use cases
-              </p>
-            </div>
-          </li>
+
         </ul>
       </div>
     </section>
