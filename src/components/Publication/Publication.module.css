@@ -62,10 +62,10 @@
 ul{
   list-style:disc;
 }
-a{
+/* a{
   text-decoration: none;
   color: #381D2A;
-}
+} */
 a:hover{
   color: #937583;
 
@@ -75,7 +75,8 @@ a:hover{
   font-weight: 400;
   border-radius: 100px;
   /* background: #381D2A; */
-  background: #FCDE9C;
+  /* background: #FCDE9C; */
+  background: linear-gradient(90deg, #863b60 0%, #7b3a59 100%);;
   padding: 2px 22px;
 }
 
