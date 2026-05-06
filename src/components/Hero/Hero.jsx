@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Valine Sonal Noronha</h1>
         <p className={styles.description}>
-          I’m an MCA student aspiring for Fullstack Developer or Software Engineer roles—feel free to reach out to connect and learn more.
+          I'm a Full-Stack Developer, building real-world applications across AI, healthcare, and web. From an AI-powered blind assistance system to a medical monitoring dashboard, I turn complex problems into clean, scalable solutions. Currently pursuing my MCA — and actively looking for developer roles where I can make an impact.
         </p>
         <div className="buttons">
         <a href="mailto:valinenoronha25@gmail.com" className={styles.contactBtn}>
