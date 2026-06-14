@@ -3,7 +3,7 @@ import publication from "../../data/publication.json";
 
 export default function Publication() {
   return (
-    <section className={styles.container} id="publication">
+    <section className={styles.container} id="publications">
       <h2 className={styles.title}>Publication</h2>
 
       <div className={styles.content}>

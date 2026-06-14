@@ -6,7 +6,7 @@ import history from "../../data/history.json";
 
 export const TechStack = () => {
   return (
-    <section className={styles.container} id="experience">
+    <section className={styles.container} id="certifications">
       <h2 className={styles.title}>TechStack</h2>
       <div className={styles.content}>
         <div className={styles.skills}>
