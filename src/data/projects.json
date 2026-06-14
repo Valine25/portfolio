@@ -33,5 +33,12 @@
     "description": "Built an eVoting system for college elections with role-based access for voters and administrators.",
     "skills": ["HTML", "CSS", "Javascript","Servlets","MySql"],
     "source": "https://github.com/Valine25/evoting_system_project"
+  },
+  {
+    "title": "AI-Powered Contextual Video Intelligence System for Automated Short-Form Content Design and Platform Adadptation",
+    "imageSrc": "/assets/projects/homepage.png",
+    "description": "An AI-driven video intelligence system that analyzes video content to automatically generate short-form content optimized for various platforms, enhancing engagement and reach.",
+    "skills": ["MERN Stack","AI/ML","OpenCV","FFmpeg"],
+    "source": "https://github.com/Valine25/video-convertor-project"
   }
 ]
