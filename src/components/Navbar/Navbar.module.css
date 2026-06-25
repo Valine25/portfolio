@@ -58,7 +58,13 @@
   font-family: var(--font-mono);
   font-size: 15px;
   letter-spacing: 0.3px;
-    color: var(--color-text);
+  color: var(--color-text-dim);
+  text-decoration: none;
+  transition: color 0.25s ease;
+  padding-bottom: 4px;
+}
+
+.menuItemsDesktop a::after {
   content: "";
   position: absolute;
   left: 0;
