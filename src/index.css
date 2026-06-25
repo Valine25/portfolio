@@ -1,14 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Amarna:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Work+Sans:ital,wght@0,300..700;1,300..700&family=Space+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+  /* ---- color tokens (Peach & Evergreen) ---- */
+  --color-bg: #F1AB86;
+  --color-bg-deep: #C57B57;
+  --color-bg-glow: #F7DBA7;
+  --color-panel: #1E2D2F;
+  --color-panel-soft: #1E2D2F30;
+  --color-panel-end: #041F1E;
+  --color-shadow: #041F1E;
+  --color-text: #F7DBA7;
+  --color-text-dim: #F1AB86cc;
+  --color-text-muted: #F7DBA799;
+  --color-body-text: #041F1E;
+  --color-accent: #C57B57;
+  --color-accent-soft: #C57B5733;
+
+  /* ---- type tokens ---- */
+  --font-display: "Outfit", sans-serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-mono: "Space Mono", monospace;
+
+  /* ---- layout tokens ---- */
+  --gutter: 10%;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Amarna", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  background-color: var(--color-bg);
+  color: var(--color-body-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+}
+
+a {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-shadow);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* eyebrow styles removed — labels above section titles were deleted */

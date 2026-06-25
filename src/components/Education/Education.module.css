@@ -1,67 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Amarna:wght@300;400;500;600&display=swap');
-
 .container {
-  color: #FCDE9C;
-  margin-top: 79px;
+  color: var(--color-text);
+  margin-top: 90px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .title {
-  font-size: 35px;
+  font-size: 34px;
   font-weight: 700;
-  letter-spacing: 1.75px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
+  font-family: var(--font-display);
+  color: var(--color-panel-end);
 }
 
 .content {
-  margin-top: 30px;
+  margin-top: 36px;
 }
 
 .edu {
+  position: relative;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 36px;
+  margin-left: 12px;
+  padding-left: 32px;
+  border-left: 2px solid rgba(247, 219, 167, 0.22);
 }
 
 .eduItem {
-  background: linear-gradient(90deg, #381D2A 0%, #70314f 100%);
-  border-radius: 12px;
+  position: relative;
+  background: linear-gradient(90deg, var(--color-panel) 0%, var(--color-panel-end) 100%);
+  border-radius: var(--radius-md);
   padding: 26px 30px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+}
+
+.node {
+  position: absolute;
+  left: -41px;
+  top: 32px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 4px var(--color-bg), 0 0 12px 2px var(--color-accent);
 }
 
 .eduItemDetails {
-  font-family: "Amarna", sans-serif;
+  font-family: var(--font-body);
 }
 
-/* Course */
 .course {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 6px;
+  font-family: var(--font-display);
 }
 
-/* College */
 .college {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  opacity: 0.95;
-  margin-bottom: 12px;
+  color: var(--color-text-dim);
+  margin-bottom: 14px;
 }
 
-/* Year + CGPA */
 .meta {
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
-  font-weight: 300;
-  opacity: 0.9;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-text-dim);
 }
 
-/* ============================= */
-/* 🔽 RESPONSIVE MEDIA QUERY */
-/* ============================= */
+.cgpa {
+  background: rgba(197, 123, 87, 0.16);
+  color: var(--color-accent);
+  padding: 4px 12px;
+  border-radius: 100px;
+}
 
 @media screen and (max-width: 768px) {
   .container {
@@ -70,38 +89,21 @@
   }
 
   .title {
-    font-size: 28px;
-    text-align: center;
+    font-size: 27px;
+  }
+
+  .edu {
+    padding-left: 24px;
   }
 
   .eduItem {
     padding: 20px 22px;
   }
 
-  .course {
-    font-size: 22px;
-  }
-
-  .college {
-    font-size: 18px;
-  }
-
-  .meta {
-    flex-direction: column;
-    gap: 6px;
-    font-size: 16px;
-  }
-}
-
-/* Extra small devices */
-@media screen and (max-width: 480px) {
-  .container {
-    margin-left: 4%;
-    margin-right: 4%;
-  }
-
-  .title {
-    font-size: 24px;
+  .node {
+    left: -33px;
+    width: 12px;
+    height: 12px;
   }
 
   .course {
@@ -111,29 +113,17 @@
   .college {
     font-size: 16px;
   }
-
-  .meta {
-    font-size: 14px;
-  }
 }
 
-/* @media screen and (max-width: 830px) {
-  .content {
+@media screen and (max-width: 480px) {
+  .container {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .meta {
     flex-direction: column;
-    align-items: center;
-    gap: 34px;
+    align-items: flex-start;
+    gap: 8px;
   }
-
-  .skills {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .history {
-    width: 100%;
-    gap: 9px;
-  }
-} */
-
-
+}

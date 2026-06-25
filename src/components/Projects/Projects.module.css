@@ -1,33 +1,25 @@
 .container {
-  margin-top: 76px;
-  color: #FCDE9C;
+  margin-top: 90px;
+  color: var(--color-text);
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .title {
-  font-size: 35px;
+  font-size: 34px;
   font-weight: 700;
-  /* font-style:bold; */
-  letter-spacing: 1.75px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
+  font-family: var(--font-display);
+  color: var(--color-panel-end);
 }
 
 .projects {
-  margin-top: 37px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: stretch;
   justify-content: center;
   gap: 32px;
   width: 100%;
 }
-/* .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 32px;
-  align-items: stretch;
-} */
-

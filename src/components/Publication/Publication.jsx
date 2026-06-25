@@ -1,37 +1,58 @@
+import { motion, useReducedMotion } from "framer-motion";
 import styles from "./Publication.module.css";
 import publication from "../../data/publication.json";
+import { Reveal } from "../common/Reveal";
+
+const list = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.15 } },
+};
+
+const row = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
 
 export default function Publication() {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <section className={styles.container} id="publications">
-      <h2 className={styles.title}>Publication</h2>
+      <Reveal>
+        <h2 className={styles.title}>Publication</h2>
+      </Reveal>
 
       <div className={styles.content}>
-        <ul className={styles.publication}>
-          {publication.map((pubItem, id) => (
-            <li key={id} className={styles.pubItem}>
-              <div className={styles.pubItemDetails}>
-                <h3 className={styles.title}>{pubItem.title}</h3>
-
-
-                <div className={styles.meta}>
-                  <ul>
-                    <br/>
-                    <a href={pubItem.link} target="_blank" rel="noopener noreferrer" className={styles.view_link}>
-                      View Publication
-                    </a><br/><br/>
-                    <li>{pubItem.desc1}</li><br/>
-                    <li>{pubItem.desc2}</li><br/>
-                    <li>{pubItem.desc3}</li>
-                  </ul>
-                  {/* <p></p><br/><br/>
-                  <span>{pubItem.desc2}</span><br/><br/>
-                  <span>{pubItem.desc3}</span> */}
-                </div>
-              </div>
-            </li>
+        <motion.ul
+          className={styles.publication}
+          variants={prefersReducedMotion ? undefined : list}
+          initial={prefersReducedMotion ? undefined : "hidden"}
+          whileInView={prefersReducedMotion ? undefined : "show"}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          {publication.map((pubItem) => (
+            <motion.li
+              key={pubItem.title}
+              className={styles.pubItem}
+              variants={prefersReducedMotion ? undefined : row}
+            >
+              <h3 className={styles.pubTitle}>{pubItem.title}</h3>
+              <a
+                href={pubItem.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.viewLink}
+              >
+                View Publication ↗
+              </a>
+              <ul className={styles.points}>
+                <li>{pubItem.desc1}</li>
+                <li>{pubItem.desc2}</li>
+                <li>{pubItem.desc3}</li>
+              </ul>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </section>
   );

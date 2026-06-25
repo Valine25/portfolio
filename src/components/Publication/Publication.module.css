@@ -1,90 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Amarna:wght@300;400;500;600&display=swap');
-
 .container {
-  color: #FCDE9C;
-  margin-top: 79px;
+  color: var(--color-text);
+  margin-top: 90px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .title {
-  font-size: 35px;
+  font-size: 34px;
   font-weight: 700;
-  letter-spacing: 1.75px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
+  font-family: var(--font-display);
+  color: var(--color-panel-end);
 }
 
 .content {
-  margin-top: 30px;
+  margin-top: 36px;
 }
 
 .publication {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 28px;
 }
 
 .pubItem {
-  background: linear-gradient(90deg, #381D2A 0%, #70314f 100%);
-  border-radius: 12px;
-  padding: 26px 30px;
+  background: linear-gradient(90deg, var(--color-panel) 0%, var(--color-panel-end) 100%);
+  border-radius: var(--radius-md);
+  padding: 30px 34px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+  
 }
 
-.pubItemDetails {
-  font-family: "Amarna", sans-serif;
-}
-
-/* Course */
-.title {
-  font-size: 26px;
+.pubTitle {
+  font-size: 23px;
   font-weight: 600;
-  margin-bottom: 6px;
+  font-family: var(--font-display);
+  margin-bottom: 18px;
+  line-height: 1.35;
 }
 
-/* College */
-.college {
-  font-size: 20px;
-  font-weight: 400;
-  opacity: 0.95;
-  margin-bottom: 12px;
-}
-
-/* Year + CGPA */
-.meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 300;
-  opacity: 0.9;
-}
-
-ul{
-  list-style:disc;
-}
-/* a{
+.viewLink {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-shadow);
   text-decoration: none;
-  color: #381D2A;
-} */
-a:hover{
-  color: #937583;
-
-}
-.view_link {
-  font-size: 18px;
-  font-weight: 400;
   border-radius: 100px;
-  /* background: #381D2A; */
-  /* background: #FCDE9C; */
-  background: linear-gradient(90deg, #863b60 0%, #7b3a59 100%);;
-  padding: 2px 22px;
+  background: var(--color-accent);
+  padding: 8px 20px;
+  margin-bottom: 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.viewLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(197, 123, 87, 0.4);
+}
 
+.points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-/* ============================= */
-/* 🔽 RESPONSIVE MEDIA QUERY */
-/* ============================= */
+.points li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text-dim);
+}
+
+.points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
 
 @media screen and (max-width: 768px) {
   .container {
@@ -93,70 +93,25 @@ a:hover{
   }
 
   .title {
-    font-size: 28px;
-    text-align: center;
+    font-size: 27px;
   }
 
   .pubItem {
-    padding: 20px 22px;
+    padding: 24px 24px;
   }
 
-  .title {
-    font-size: 22px;
-  }
-
-  .college {
-    font-size: 18px;
-  }
-
-  .meta {
-    flex-direction: column;
-    gap: 6px;
-    font-size: 16px;
+  .pubTitle {
+    font-size: 19px;
   }
 }
 
-/* Extra small devices */
 @media screen and (max-width: 480px) {
   .container {
     margin-left: 4%;
     margin-right: 4%;
   }
 
-  .title {
-    font-size: 24px;
-  }
-
-  .title {
-    font-size: 20px;
-  }
-
-  .college {
-    font-size: 16px;
-  }
-
-  .meta {
+  .points li {
     font-size: 14px;
   }
 }
-
-/* @media screen and (max-width: 830px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
-  }
-
-  .skills {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .history {
-    width: 100%;
-    gap: 9px;
-  }
-} */
-
-
