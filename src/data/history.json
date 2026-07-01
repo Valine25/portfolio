@@ -24,5 +24,11 @@
     "role": "Email Marketing",
     "organisation": "HubSpot",
     "imageSrc": "/assets/certificates/Email_Marketing.png"
+  },
+  {
+    
+    "role": "Building LLM Applications using Prompt Engineering",
+    "organisation": "Analytics Vidhya",
+    "imageSrc": "/assets/certificates/Prompt Engineering.pdf"
   }
 ]
