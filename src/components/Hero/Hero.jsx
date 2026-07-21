@@ -59,7 +59,7 @@ export const Hero = () => {
             variants={item}
             whileHover={{ y: -2, scale: 1.02 }}
             transition={{ duration: 0.25 }}
-            href="/Valine_FSD.pdf"
+            href="/Valine_FS_AI.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.secondaryBtn}
