@@ -19,7 +19,8 @@ const EXPERIENCES = [
       "Deployed and managed cloud resources using AWS services such as S3, CloudFront, and ACM.",
       "Configured SSL certificates and monitored production reliability for live customer traffic.",
       "Collaborated with product and operations teams to streamline deployment workflows."
-    ]
+    ],
+    certificateUrl: "/assets/certificates/INternship Certificate 2 month.pdf"
   }
 ];
 
@@ -53,6 +54,16 @@ export const Experience = () => {
                 <p className={styles.date}>{exp.date}</p>
               </div>
               <p className={styles.desc}>{exp.desc}</p>
+              {exp.certificateUrl && (
+                <a
+                  href={exp.certificateUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.certificateButton}
+                >
+                  View Internship Certificate ↗
+                </a>
+              )}
               <ul className={styles.bullets}>
                 {exp.bullets.map((bullet, index) => (
                   <li key={index}>{bullet}</li>

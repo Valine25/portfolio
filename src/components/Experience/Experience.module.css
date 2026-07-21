@@ -106,6 +106,27 @@
   line-height: 1.75;
 }
 
+.certificateButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(247, 219, 167, 0.16);
+  border: 1px solid rgba(247, 219, 167, 0.28);
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.certificateButton:hover {
+  transform: translateY(-2px);
+  background: rgba(247, 219, 167, 0.24);
+}
+
 .bullets {
   list-style: none;
   margin: 20px 0 0;
